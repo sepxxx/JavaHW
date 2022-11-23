@@ -44,6 +44,26 @@ class DrawComponent extends JComponent {
         g2.draw(new Line2D.Double(leftX+150, topY, leftX+20, topY-40));
         g2.draw(new Line2D.Double(leftX+150, topY, leftX +280, topY-40));
 
+        Ellipse2D ellipse3 = new Ellipse2D.Double(leftX+80, topY+50,80, 80);
+        g2.setPaint(Color.YELLOW);
+        g2.fill(ellipse3);
+        g2.setPaint(Color.BLACK);
+        g2.draw(ellipse3);
+
+        Ellipse2D ellipse4 = new Ellipse2D.Double(leftX+95, topY+70,15, 15);
+        g2.setPaint(Color.BLACK);
+        g2.fill(ellipse4);
+        g2.draw(ellipse4);
+
+        Ellipse2D ellipse5 = new Ellipse2D.Double(leftX+130, topY+70,15, 15);
+        g2.setPaint(Color.BLACK);
+        g2.fill(ellipse5);
+        g2.draw(ellipse5);
+
+        g2.setPaint(Color.BLACK);
+        g2.fillArc((int)leftX+110,(int)topY+100,20, 20, 0, 180);
+
+
         //устанавливаем белый цвет
         g2.setPaint(Color.BLUE);
 
